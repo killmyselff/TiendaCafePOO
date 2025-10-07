@@ -21,5 +21,10 @@ public class TiendaCafe {
         cafe1.actualizarCantidad(5);
         System.out.println("------------------------");
         cafe1.mostrarInformacion();
+
+        System.out.println("\nAplicando descuento al café de Antioquia...");
+        cafe2.aplicarDescuento(10); // 10% de descuento
+        System.out.println("------------------------");
+        cafe2.mostrarInformacion();
     }
 }

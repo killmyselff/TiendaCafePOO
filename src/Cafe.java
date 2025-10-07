@@ -27,4 +27,12 @@ public class Cafe {
     public void actualizarCantidad(float nuevaCantidad) {
         this.cantidadEnKilos = nuevaCantidad;
     }
+
+    public void aplicarDescuento(double porcentaje) {
+        if (porcentaje > 0 && porcentaje <= 100) {
+            this.precioPorKilo -= this.precioPorKilo * (porcentaje / 100);
+        } else {
+            System.out.println("El porcentaje de descuento debe estar entre 0 y 100.");
+        }
+    }
 }
